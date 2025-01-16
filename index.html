@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-light-green-ink-smudge-flower-branch-background-picture-image_1453864.jpg');
+            color: #333;
+        }
+
+        header {
+            background-color: #314733;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #2f4f4f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #314733;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            background-color: #f0f4f8;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #314733;
+        }
+        
+        #contact {
+            text-align: left;
+            margin-left: 50px; /* Khoảng cách lề trái */
+        }
+        .progress-container {
+            width: 80%;
+            background-color: #f3f3f3;
+            border-radius: 20px;
+            margin: 20px auto;
+            height: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            height: 100%;
+            width: 15%; /* Giá trị phần trăm cố định */
+            background-color: #4caf50;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    </style>
+    
+</head>
+<body>
+
+<header>
+    <h1>HCL</h1>
+</header>
+
+<nav>
+    <a onclick="showTab('about')">About</a>
+    <a onclick="showTab('projects')">Projects</a>
+    <a onclick="showTab('contact')">Contact</a>
+    <a onclick="showTab('resul')"> Resul</a>
+
+</nav>
+
+<div class="content">
+    <div id="about" class="tab-content active">
+        <h2>About</h2>
+        <p>Welcome to my website, it...</p>
+    </div>
+
+    <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/Created-login-form/">Lab1</a></h3>
+                <p>Is a project to program a login page</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/lab2/">Lab2</a></h3>
+                <p>Programming a course registration website</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/TLinh/">Lab3</a></h3>
+                <p>Function: share learning materials for students by subject. Each subject can share documents such as Lectures/Assignments/References.</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/lab4/">Lab4</a></h3>
+                <p>Programming a course website</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/lab5/">Lab5</a></h3>
+                <p>Is a project to program a login page</p>
+        </div>
+        <div class="project-item">
+            <h3><a href="https://tl-1279.github.io/lab/">Lab6</a></h3>
+                <p>Iwebsite about programming languages, writing code
+                </p>
+        </div>
+      
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Name: Nguyễn Thị Thuỷ Linh</p>
+        <p>MSSV: 23130171</p>
+        <p>Class: DH23DTC</p>
+    </div>
+
+    <div id="resul" class= "tab-content active">
+        <main> 
+         <h1>Kết quả Cá nhân</h1>
+        <section>
+            <h2>Những gì đã làm/học được</h2>
+            <ul>
+                <li>Phát triển trang của nhóm.</li>
+                <li>Thiết kế giao diện với CSS và JavaScript.</li>
+                <li>Nghiên cứu và triển hiệu ứng của trang.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Liên kết đến các trang</h2>
+            <ul>
+                <li><a href="https://tl-1279.github.io/blog/">Trang Blog</a></li>
+                <li><a href="https://tl-1279.github.io/contact/">Trang Hỗ Trợ</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tự đánh giá</h2>
+            <p>Tôi đánh giá bản thân đạt <strong>15%</strong> trong tổng số 100% Project nhóm.</p>
+        </section>
+        <div class="progress-container">
+            <div class="progress-bar">15%</div> <!-- Giá trị phần trăm cố định -->
+        </div>
+        </main>
+    </div>
+
+<footer>
+    <p>&copy; 2024 Nguyễn Thị Thuỷ Linh</p>
+</footer>
+
+<script>
+    function showTab(tabId) {
+        var tabs = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
+        document.getElementById(tabId).classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        showTab('about');
+    });
+</script>
+
+</body>
+</html>
